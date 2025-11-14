@@ -1,8 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useAccount, useConnect, useDisconnect, useChainId, useSwitchChain } from 'wagmi'
-import { SEPOLIA_CHAIN_ID, SEPOLIA_NETWORK } from '@/lib/constants'
+import {
+  useAccount,
+  useConnect,
+  useDisconnect,
+  useChainId,
+  useSwitchChain,
+} from 'wagmi'
+import { SEPOLIA_CHAIN_ID } from '@/lib/constants'
 
 export function WalletConnect() {
   const [mounted, setMounted] = useState(false)
@@ -75,4 +81,3 @@ export function WalletConnect() {
     </div>
   )
 }
-
